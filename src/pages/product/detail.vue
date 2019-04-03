@@ -36,10 +36,12 @@
 			</div>
 		</div>
 		<div class="buy">
-			<p class="conact">联系客服</p>
-			<a href="product_exchange.html"><p class="huan">立即兑换</p></a>
+			<router-link to="/custome"><p class="conact">联系客服</p></router-link>
+			<router-link to="/pchange"><p class="huan">立即兑换</p></router-link>
 		</div>
-    </div>
+
+		
+    </div> 
 </template>
 <script>
 import headtop from '../../components/header/head'
@@ -47,12 +49,15 @@ export default {
     name:'detail',
     data () {
         return {
-            
+			id:''
         }
     },
     components:{
         headtop
-    }
+	},
+	created () {
+		this.id = this.$route.query.id;
+	}
 }
 </script>
 <style scope>

@@ -3,29 +3,28 @@
         <div class="user_bg">
 			<img src="../../images/touxiang.png" />
 			<p class="name">18607489234</p>
-			<a>个人信息</a>
+			<router-link to="/info"><a>个人信息</a></router-link>
 		</div>
 		<div class="Ulist">
 			<ul>
 				<li>
-					<a>我的订单</a>
+					<router-link to="/order">我的订单</router-link>
 					<span>查看全部</span>
-				</li>
 				<li>
-					<a href="code.html">我的邀请码</a>
+					<router-link to="/code">我的邀请码</router-link>
 					<span>分享</span>
 				</li>
 				<li>
 					<a href="integral.html">我的积分</a>
 				</li>
 				<li>
-					<a href="adress.html">收货地址</a>
+					<router-link to="/adress">收货地址</router-link>
 				</li>
 				<li>
-					<a href="security.html">账户安全</a>
+					<router-link to="/security">账户安全</router-link>
 				</li>
 				<li>
-					<a href="set.html">设置</a>
+					<router-link to="/set">设置</router-link>
 				</li>
 			</ul>
 		</div>

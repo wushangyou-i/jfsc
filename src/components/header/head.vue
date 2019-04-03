@@ -1,5 +1,9 @@
 <template>
-    <header class="clearfix top">
+    <header v-if="tranfrom ==1" class="clearfix top" style="background:transparent">
+        <span v-if="back" @click="goBack" class="mui-action-back"></span>
+        <p class="title">{{title}}</p>
+    </header>
+    <header v-else  class="clearfix top" >
         <span v-if="back" @click="goBack" class="mui-action-back"></span>
         <p class="title">{{title}}</p>
     </header>
@@ -17,7 +21,7 @@ export default {
             this.$router.back(-1)
         }
     },
-    props: ['back','title'],
+    props: ['back','title','tranfrom'],
    
 }
 </script>

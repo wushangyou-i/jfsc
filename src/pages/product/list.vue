@@ -22,6 +22,7 @@
 			</div>
 		</div>
 		<taber index="1"></taber>
+		<div><router-view></router-view></div>
     </div>
 </template>
 <script>
